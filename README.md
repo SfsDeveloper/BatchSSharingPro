@@ -1,7 +1,7 @@
 # BatchSSharingPro
 Batch file for using the application *"SSharing Pro"* on the command line.
 
-# About SSharing Pro
+# About *"SSharing Pro"*
 *"SSharing Pro"* is (k, n) Threshold Secret Sharing Scheme Utility.<br>
 *"SSharing Pro"* is paid. There is a free trial period.<br>
 <br>
@@ -10,7 +10,7 @@ However, the free version cannot be used from the command line.
 
 # See also
 See also below for *"SSharing Pro"*. <br>
-[SSharing Pro Official Page](https://www.sfellow.co.jp/EN/product/SSharing/)
+[*"SSharing Pro"* Official Page](https://www.sfellow.co.jp/EN/product/SSharing/)
 
 # Detail
 *"SSharing Pro"* is an application that runs on Windows. <br>
@@ -20,13 +20,13 @@ There are the following restrictions when running from the command line:
 1. Long command <br>
 When running from the command line, you must type: <br>
 This is a very long and annoying command. <br>
-###### `start shell:AppsFolder\PackageFamilyName!ApplicationId`<br>
+`start shell:AppsFolder\PackageFamilyName!ApplicationId`<br>
 Note : The "PackageFamilyName" and "ApplicationId" are different for each application.
 
 1. The current directory is fixed <br>
 The current directory will always be `C:\WINDOWS\system32`. For those who have used the command line until now, this is a difficult environment to use.
 
-1. Don't wait for processing <br>
+1. Do not wait for processing to complete <br>
 If you run it in a batch file, proceed to the next step without waiting for the process to complete. Even if you create a batch file that copies the shared file after share, it will try to copy the shared file before the share process is finished. This will not copy the shared files successfully. This drastically reduces the effectiveness of the batch file.
 
 We have prepared a PowerShell script `SSharing.ps1` to solve these problems.

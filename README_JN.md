@@ -21,7 +21,7 @@
 1.	コマンドが長い<br>
 コマンドラインから起動する場合は、次のように入力しなければなりません。<br>
 これはとても長く煩わしいコマンドになります。<br>
-###### `start shell:AppsFolder\PackageFamilyName!ApplicationId`
+`start shell:AppsFolder\PackageFamilyName!ApplicationId`
 注意：「PackageFamilyName」と「ApplicationId」は、アプリケーションによって異なります。
 
 1.	カレントディレクトリが固定<br>
@@ -35,11 +35,11 @@
 # 特殊オプション
 上記2と3は、スクリプトやバッチファイルだけでは解決できません。*"SSharing Pro"*&ensp;は、これらに対応するための特殊オプションを持っています。
 
-- -cur オプション<br>
+### -cur オプション<br>
 カレントディレクトリを指定するためのオプションです。<br>
 `SSharing.ps1`は、カレントディレクトリに「スクリプトを実行したディレクトリ」を指定します。
 
-- -event オプション<br>
+### -event オプション<br>
 *"SSharing Pro"*&ensp;と同期するためのオプションです。<br>
 `SSharing.ps1`は&ensp;*"SSharing Pro"*&ensp;が完了するまで処理を終了しません。<br>
 次の手順で"SSharing Pro"と同期します。<br>
