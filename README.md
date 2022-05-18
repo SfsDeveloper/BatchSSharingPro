@@ -20,7 +20,7 @@ There are the following restrictions when running from the command line:
 1. Long command <br>
 When running from the command line, you must type: <br>
 This is a very long and annoying command. <br>
-'start shell:AppsFolder\PackageFamilyName!ApplicationId'<br>
+###### `start shell:AppsFolder\PackageFamilyName!ApplicationId`<br>
 Note : The "PackageFamilyName" and "ApplicationId" are different for each application.
 
 1. The current directory is fixed <br>
@@ -40,8 +40,10 @@ This is an option to specify the current directory. <br>
 
 - -event option <br>
 This is an option to synchronize with *"SSharing Pro"*. <br>
-`SSharing.ps1` doesn't finish processing until Mutex is complete.<br>
-You can freely specify the name of the Event other than "xxx". 
+`SSharing.ps1` doesn't finish processing until *"SSharing Pro"* is complete.<br>
+Follow the steps below to synchronize with *"SSharing Pro"*. <br>
+The event name "xxx" can be freely selected.
+
  1. Creating an Event named "xxx".<br>
  1. Creating a Mutex named "xxx_2".<br>
  1. Run *"SSharing Pro"* with the option "-event xxx".<br>
@@ -56,7 +58,7 @@ If you want to share `_ReadMe.txt`, enter the following at the command line:
 powershell -Command "& './SSharing.ps1'" -cmd -encode -en_n 5 -en_k 3 _ReadMe.txt
 ```
 
-- Note: Place the following files in the current directory and execute. <br>
+Note: Place the following files in the current directory and execute. <br>
 SSharing.ps1<br>
 _ReadMe.txt
 

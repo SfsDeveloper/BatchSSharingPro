@@ -10,7 +10,7 @@
 
 # 参照
 *"SSharing Pro"*&ensp;については以下も参照ください。<br>
-[*SSharing Pro* 公式ページ](https://www.sfellow.co.jp/EN/product/SSharing/)
+[*SSharing Pro* 公式ページ](https://www.sfellow.co.jp/product/SSharing/)
 
 
 # 詳細
@@ -21,10 +21,8 @@
 1.	コマンドが長い<br>
 コマンドラインから起動する場合は、次のように入力しなければなりません。<br>
 これはとても長く煩わしいコマンドになります。<br>
-（注）「PackageFamilyName」と「ApplicationId」は、アプリケーションによって異なります。
-```
-start shell:AppsFolder\PackageFamilyName!ApplicationId
-```
+###### `start shell:AppsFolder\PackageFamilyName!ApplicationId`
+注意：「PackageFamilyName」と「ApplicationId」は、アプリケーションによって異なります。
 
 1.	カレントディレクトリが固定<br>
 カレントディレクトリが常に`C:\WINDOWS\system32`になります。今までコマンドラインを利用してきた人にとって、これは使いにくい環境です。
@@ -39,13 +37,19 @@ start shell:AppsFolder\PackageFamilyName!ApplicationId
 
 - -cur オプション<br>
 カレントディレクトリを指定するためのオプションです。<br>
-`SSharing.ps1`は、スクリプトを実行したディレクトリを指定して実行します。
+`SSharing.ps1`は、カレントディレクトリに「スクリプトを実行したディレクトリ」を指定します。
 
 - -event オプション<br>
 *"SSharing Pro"*&ensp;と同期するためのオプションです。<br>
-オプションを「-event abc」とした場合、"abc" という Event と、"abc_2"という Mutex を生成して*"SSharing Pro"*&ensp;を実行します。
-その後、Event を待つことで*"SSharing Pro"*&ensp;が処理を開始したタイミングがわかり、さらにその後、 Mutex を待つことで*"SSharing Pro"*&ensp;が処理を終了したタイミングがわかります。<br>
-`SSharing.ps1`は Mutex が完了するまで処理を終了しません。
+`SSharing.ps1`は&ensp;*"SSharing Pro"*&ensp;が完了するまで処理を終了しません。<br>
+次の手順で"SSharing Pro"と同期します。<br>
+イベント名称「xxx」は自由に選択できます。<br>
+
+ 1. 名称「xxx」のEventを生成します。<br>
+ 1. 名称「xxx_2」のMutexを生成します。<br>
+ 1. オプション「"-event xxx"」を指定して*"SSharing Pro"*を実行します。<br>
+ 1. Eventを待ちます。<br>
+ 1. Mutexを待ちます。<br>
 
 # 「SSharing.ps1」の使い方
 `_ReadMe.txt`を分散する場合、コマンドラインで次のように入力します。
