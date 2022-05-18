@@ -10,11 +10,7 @@ However, the free version cannot be used from the command line.
 
 # See also
 See also below for *"SSharing Pro"*. <br>
-[SSharing Pro Official Page] (https://www.sfellow.co.jp/EN/product/SSharing/)
-
-<https://www.sfellow.co.jp/EN/product/SSharing/>
-
-https://www.sfellow.co.jp/EN/product/SSharing/
+[SSharing Pro Official Page](https://www.sfellow.co.jp/EN/product/SSharing/)
 
 # Detail
 *"SSharing Pro"* is an application that runs on Windows. <br>
@@ -24,9 +20,7 @@ There are the following restrictions when running from the command line:
 1. Long command <br>
 When running from the command line, you must type: <br>
 This is a very long and annoying command. <br>
-```
-start shell:AppsFolder\PackageFamilyName!ApplicationId
-```
+'start shell:AppsFolder\PackageFamilyName!ApplicationId'<br>
 Note : The "PackageFamilyName" and "ApplicationId" are different for each application.
 
 1. The current directory is fixed <br>
@@ -46,10 +40,15 @@ This is an option to specify the current directory. <br>
 
 - -event option <br>
 This is an option to synchronize with *"SSharing Pro"*. <br>
-After creating an Event named "xxx" and a Mutex named "xxx_2", run *"SSharing Pro"* with the option "-event xxx".
-After that, waiting for Event will tell you when *"SSharing Pro"* started processing, and then waiting for Mutex will tell you when *"SSharing Pro"* finished processing. <br>
-`SSharing.ps1` doesn't finish processing until Mutex is complete.
-You can freely specify the name of the Event other than "xxx".
+`SSharing.ps1` doesn't finish processing until Mutex is complete.<br>
+You can freely specify the name of the Event other than "xxx". 
+ 1. Creating an Event named "xxx".<br>
+ 1. Creating a Mutex named "xxx_2".<br>
+ 1. Run *"SSharing Pro"* with the option "-event xxx".<br>
+ 1. Waiting for Event.<br>
+ 1. Waiting for Mutex.<br>
+ 
+
 
 # How to use "SSharing.ps1"
 If you want to share `_ReadMe.txt`, enter the following at the command line:
@@ -62,11 +61,11 @@ SSharing.ps1<br>
 _ReadMe.txt
 
 # Batch Files
-#### Base
+### Base
 In the "Base" folder, we have prepared a batch file for each *"SSharing Pro"* option. <br>
 If you don't know how to specify the options, copy them from these files and use them.
   
-#### VariousUses
+### VariousUses
 In the "VariousUses" folder, we have prepared a more advanced batch file according to the purpose.
   
 - Daily<br>
@@ -74,8 +73,8 @@ Embed the date and time in the output file name. <br>
 This is useful if you want to perform a share for daily backup purposes.
     
 - Distribute<br>
-Share the "Data" folder into three, move one to the `W drive` and the other to the` Y drive`. <br>
-You can also retrieve and reconstruct shared files from the `W drive` and` Y drive`.
+Share the "Data" folder into three, move one to the `W drive` and the other to the `Y drive`. <br>
+You can also retrieve and reconstruct shared files from the `W drive` and `Y drive`.
     
 - Drag<br>
 Share and reconstruct by dragging to a batch file.

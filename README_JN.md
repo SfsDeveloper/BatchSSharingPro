@@ -1,7 +1,7 @@
 # BatchSSharingPro
 *"SSharing Pro"*&ensp;をコマンドラインで使用するためのバッチファイルを集めました。
 
-# About SSharing Pro
+# *SSharing Pro* とは
 *"SSharing Pro"*&ensp;は、 (k,n) しきい値秘密分散法を利用した新しい形の暗号化ソフトです。<br>
 *"SSharing Pro"*&ensp;は有料です。無料お試し期間があります。<br>
 <br>
@@ -12,10 +12,6 @@
 *"SSharing Pro"*&ensp;については以下も参照ください。<br>
 [*SSharing Pro* 公式ページ](https://www.sfellow.co.jp/EN/product/SSharing/)
 
-<https://www.sfellow.co.jp/EN/product/SSharing/>
-
-https://www.sfellow.co.jp/EN/product/SSharing/
-
 
 # 詳細
 *"SSharing Pro"*&ensp;はWindows上で動作するアプリケーションです。<br>
@@ -25,10 +21,10 @@ https://www.sfellow.co.jp/EN/product/SSharing/
 1.	コマンドが長い<br>
 コマンドラインから起動する場合は、次のように入力しなければなりません。<br>
 これはとても長く煩わしいコマンドになります。<br>
+（注）「PackageFamilyName」と「ApplicationId」は、アプリケーションによって異なります。
 ```
 start shell:AppsFolder\PackageFamilyName!ApplicationId
 ```
-（注）「PackageFamilyName」と「ApplicationId」は、アプリケーションによって異なります。
 
 1.	カレントディレクトリが固定<br>
 カレントディレクトリが常に`C:\WINDOWS\system32`になります。今までコマンドラインを利用してきた人にとって、これは使いにくい環境です。
@@ -62,11 +58,11 @@ SSharing.ps1<br>
 _ReadMe.txt
 
 # Batch Files
-#### Base
+### Base
 「Base」フォルダには、*"SSharing Pro"*&ensp;のオプション毎にバッチファイルを用意しました。<br>
 オプションの指定方法がわからない場合、これらのファイルからコピーして使用してください。
   
-#### VariousUses
+### VariousUses
 「VariousUses」フォルダには、用途に応じたもう少し高度なバッチファイルを用意しました。
   
 - Daily<br>
