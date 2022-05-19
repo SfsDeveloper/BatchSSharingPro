@@ -34,11 +34,11 @@ We have prepared a PowerShell script `SSharing.ps1` to solve these problems.
 # Special options
 The above 2 and 3 cannot be solved only by scripts and batch files. *"SSharing Pro"* has special options to deal with these.
 
-- -cur option<br>
+### -cur option<br>
 This is an option to specify the current directory. <br>
 `SSharing.ps1` specifies the directory where the script was executed in the -cur option.
 
-- -event option <br>
+### -event option <br>
 This is an option to synchronize with *"SSharing Pro"*. <br>
 `SSharing.ps1` doesn't finish processing until *"SSharing Pro"* is complete.<br>
 Follow the steps below to synchronize with *"SSharing Pro"*. <br>

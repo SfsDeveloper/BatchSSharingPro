@@ -57,7 +57,7 @@
 powershell -Command "& './SSharing.ps1'" -cmd -encode -en_n 5 -en_k 3 _ReadMe.txt
 ```
 
-- 注意：次のファイルをカレントディレクトリに置いて実行してください。<br>
+注意：次のファイルをカレントディレクトリに置いて実行してください。<br>
 SSharing.ps1<br>
 _ReadMe.txt
 
