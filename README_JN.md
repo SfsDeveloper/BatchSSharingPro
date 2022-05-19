@@ -1,5 +1,5 @@
 # BatchSSharingPro
-*"SSharing Pro"*&ensp;をコマンドラインで使用するためのバッチファイルを集めました。
+*"SSharing Pro"*&ensp;をコマンドラインで使用するためのバッチファイルを集めました。*"SSharing Pro"*&ensp;は、 (k,n) しきい値秘密分散法を利用した新しい形の暗号化ソフトです。<br>
 
 # *SSharing Pro* とは
 *"SSharing Pro"*&ensp;は、 (k,n) しきい値秘密分散法を利用した新しい形の暗号化ソフトです。<br>

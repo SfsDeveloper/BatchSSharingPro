@@ -1,5 +1,5 @@
 # BatchSSharingPro
-Batch file for using the application *"SSharing Pro"* on the command line.
+Batch file for using the application *"SSharing Pro"* on the command line. *"SSharing Pro"* is (k, n) Threshold Secret Sharing Scheme Utility.<br>
 
 # About *"SSharing Pro"*
 *"SSharing Pro"* is (k, n) Threshold Secret Sharing Scheme Utility.<br>
